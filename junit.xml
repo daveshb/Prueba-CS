@@ -1,0 +1,357 @@
+<testsuites name="jest tests" tests="13" failures="1" time="25.876">
+  <testsuite name="Login" errors="0" failures="0" skipped="0" timestamp="2022-04-21T02:59:21" time="7.124" tests="4">
+    <testcase classname="Login Elementos existen" name="Login Elementos existen" time="0.106">
+    </testcase>
+    <testcase classname="Login Mensaje de  error Email es requerido" name="Login Mensaje de  error Email es requerido" time="0.337">
+    </testcase>
+    <testcase classname="Login Mensaje de  error Contraseña es requerida" name="Login Mensaje de  error Contraseña es requerida" time="0.185">
+    </testcase>
+    <testcase classname="Login Mensaje de  error Datos inválidos" name="Login Mensaje de  error Datos inválidos" time="0.394">
+    </testcase>
+  </testsuite>
+  <testsuite name="Navigación" errors="0" failures="1" skipped="0" timestamp="2022-04-21T02:59:21" time="8.213" tests="4">
+    <testcase classname="Navigación Opciones en el header Ingreso, Usuarios, Crear y Cerrar Sesión" name="Navigación Opciones en el header Ingreso, Usuarios, Crear y Cerrar Sesión" time="0.144">
+    </testcase>
+    <testcase classname="Navigación Ruta Error404" name="Navigación Ruta Error404" time="0.02">
+    </testcase>
+    <testcase classname="Navigación Sin token redirige a Ingreso" name="Navigación Sin token redirige a Ingreso" time="1.286">
+      <failure>Error: Unable to find an element by: [data-testid=&quot;login__title&quot;]
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;header
+      class=&quot;header__conatiner&quot;
+    &gt;
+      &lt;nav
+        class=&quot;header__nav&quot;
+      &gt;
+        &lt;a
+          class=&quot; link&quot;
+          data-testid=&quot;header__link-login&quot;
+          href=&quot;/ingreso&quot;
+        &gt;
+          Ingreso
+        &lt;/a&gt;
+        &lt;a
+          class=&quot; link&quot;
+          data-testid=&quot;header__link-users&quot;
+          href=&quot;/usuarios&quot;
+        &gt;
+          Usuarios
+        &lt;/a&gt;
+        &lt;a
+          class=&quot; link&quot;
+          data-testid=&quot;header__link-create&quot;
+          href=&quot;/crear&quot;
+        &gt;
+          Crear
+        &lt;/a&gt;
+        &lt;a
+          class=&quot; link link__a&quot;
+          data-testid=&quot;header__link-signout&quot;
+        &gt;
+          Cerrar sesión
+        &lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+      &lt;h1
+        class=&quot;users__title&quot;
+        data-testid=&quot;users__title&quot;
+      &gt;
+        Lista de usuarios
+      &lt;/h1&gt;
+      &lt;button
+        class=&quot;users__btn-create&quot;
+        data-testid=&quot;users__btn-create&quot;
+      &gt;
+         Crear 
+      &lt;/button&gt;
+      &lt;div
+        class=&quot;users__container&quot;
+      &gt;
+        &lt;table
+          class=&quot;users__table&quot;
+          data-testid=&quot;users__table&quot;
+        &gt;
+          &lt;tr
+            class=&quot;users__tr&quot;
+          &gt;
+            &lt;td
+              class=&quot;table__title&quot;
+            &gt;
+              Id
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__title&quot;
+            &gt;
+              Nombre
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__title&quot;
+            &gt;
+              Email
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__title&quot;
+            &gt;
+              Avatar
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__title&quot;
+            &gt;
+              Acción
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              1
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              George Bluth 
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              george.bluth@reqres.in
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;img
+                class=&quot;table__img&quot;
+                data-testid=&quot;user__img-1&quot;
+                src=&quot;https://reqres.in/img/faces/1-image.jpg&quot;
+              /&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;button
+                class=&quot;table__btn&quot;
+              &gt;
+                 Eliminar 
+              &lt;/button&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              2
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              Janet Weaver 
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              janet.weaver@reqres.in
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;img
+                class=&quot;table__img&quot;
+                data-testid=&quot;user__img-2&quot;
+                src=&quot;https://reqres.in/img/faces/2-image.jpg&quot;
+              /&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;button
+                class=&quot;table__btn&quot;
+              &gt;
+                 Eliminar 
+              &lt;/button&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              3
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              Emma Wong 
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              emma.wong@reqres.in
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;img
+                class=&quot;table__img&quot;
+                data-testid=&quot;user__img-3&quot;
+                src=&quot;https://reqres.in/img/faces/3-image.jpg&quot;
+              /&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;button
+                class=&quot;table__btn&quot;
+              &gt;
+                 Eliminar 
+              &lt;/button&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              4
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              Eve Holt 
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              eve.holt@reqres.in
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;img
+                class=&quot;table__img&quot;
+                data-testid=&quot;user__img-4&quot;
+                src=&quot;https://reqres.in/img/faces/4-image.jpg&quot;
+              /&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;button
+                class=&quot;table__btn&quot;
+              &gt;
+                 Eliminar 
+              &lt;/button&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              5
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              Charles Morris 
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              charles.morris@reqres.in
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;img
+                class=&quot;table__img&quot;
+                data-testid=&quot;user__img-5&quot;
+                src=&quot;https://reqres.in/img/faces/5-image.jpg&quot;
+              /&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;button
+                class=&quot;table__btn&quot;
+              &gt;
+                 Eliminar 
+              &lt;/button&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              6
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              Tracey Ramos 
+            &lt;/td&gt;
+            &lt;td
+              class=&quot;table__text&quot;
+            &gt;
+              tracey.ramos@reqres.in
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;img
+                class=&quot;table__img&quot;
+                data-testid=&quot;user__img-6&quot;
+                src=&quot;https://reqres.in/img/faces/6-image.jpg&quot;
+              /&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;button
+                class=&quot;table__btn&quot;
+              &gt;
+                 Eliminar 
+              &lt;/button&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div
+        class=&quot;btn__page--container&quot;
+      &gt;
+        &lt;button
+          class=&quot;btn__page&quot;
+        &gt;
+           Anterior 
+        &lt;/button&gt;
+        &lt;button
+          class=&quot;btn__page btn__page--number&quot;
+          data-testid=&quot;users__btn-page-1&quot;
+        &gt;
+          1
+        &lt;/button&gt;
+        &lt;button
+          class=&quot;btn__page btn__page--number&quot;
+          data-testid=&quot;users__btn-page-2&quot;
+        &gt;
+          2
+        &lt;/button&gt;
+        &lt;button
+          class=&quot;btn__page&quot;
+        &gt;
+           Siguiente 
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at waitForWrapper (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/wait-for.js:173:27)
+    at Object.&lt;anonymous&gt; (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/src/__tests__/Navigation.test.tsx:47:9)
+    at Promise.then.completed (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-circus/build/utils.js:276:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-circus/build/utils.js:216:10)
+    at _callCircusTest (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-circus/build/run.js:212:40)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at _runTest (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-circus/build/run.js:149:3)
+    at _runTestsForDescribeBlock (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-circus/build/run.js:63:9)
+    at _runTestsForDescribeBlock (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-circus/build/run.js:57:9)
+    at run (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:176:21)
+    at jestAdapter (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:109:19)
+    at runTestInternal (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-runner/build/runTest.js:380:16)
+    at runTest (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-runner/build/runTest.js:472:34)
+    at Object.worker (/Users/davidestebanhenaobustamante/Desktop/prueba ceiba/77f8b83e-6b14-4e05-811e-de4e51d8e405/node_modules/jest-runner/build/testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Navigación Con token navega a crear, usuarios y cierra sesión." name="Navigación Con token navega a crear, usuarios y cierra sesión." time="0.632">
+    </testcase>
+  </testsuite>
+  <testsuite name="Crear" errors="0" failures="0" skipped="0" timestamp="2022-04-21T02:59:21" time="8.406" tests="3">
+    <testcase classname="Crear Elementos existen" name="Crear Elementos existen" time="0.904">
+    </testcase>
+    <testcase classname="Crear Mensaje de  error &apos;Nombre requerido&apos;" name="Crear Mensaje de  error &apos;Nombre requerido&apos;" time="0.904">
+    </testcase>
+    <testcase classname="Crear Mensaje de  error &apos;Trabajo requerido&apos;" name="Crear Mensaje de  error &apos;Trabajo requerido&apos;" time="0.53">
+    </testcase>
+  </testsuite>
+  <testsuite name="Users" errors="0" failures="0" skipped="0" timestamp="2022-04-21T02:59:28" time="2.133" tests="2">
+    <testcase classname="Users Elementos existen" name="Users Elementos existen" time="0.821">
+    </testcase>
+    <testcase classname="Users Botón redirecciona a /crear" name="Users Botón redirecciona a /crear" time="0.187">
+    </testcase>
+  </testsuite>
+</testsuites>

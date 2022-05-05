@@ -1,0 +1,1 @@
+export const urlBase = 'https://reqres.in/api';
